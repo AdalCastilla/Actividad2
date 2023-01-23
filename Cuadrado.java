@@ -11,17 +11,20 @@ public class Cuadrado {
   public double diagonal;
   public double perimetro;
   
-  void cuadrado(int ID){
-      this.lado=ID;
+  public Cuadrado(double lado){
+      this.lado=lado;
+  }
+  public Cuadrado(){
+      this(177852);
   }
   
-  void CalcularArea(){
+  void calcularArea(){
       perimetro=lado*lado;
   }
-  void CalcularPerimetro(){
+  void calcularPerimetro(){
       area=lado*lado;
   }
-  void CalcularDiagonal(){
+  void calcularDiagonal(){
       diagonal= Math.sqrt(Math.pow(lado,2)*2);
   }
     

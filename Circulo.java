@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package actividad;
 
 /**
@@ -13,15 +10,19 @@ public class Circulo {
     public double area;
     public double circunferencia;
     
-    void Circulo(double ID){
-        this.radio= ID;
+    public Circulo(double radio){
+        this.radio= radio;
+        
+    }
+    public Circulo(){
+        this(177852);
     }
     
-    void CalcularArea(){
+    void calcularArea(){
         area = 3.14 * Math.pow(radio, 2);
     }
     
-    void CalcularCircunferencia(){
+    void calcularCircunferencia(){
         circunferencia= 3.14*2*radio;
     }
 }
