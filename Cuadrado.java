@@ -1,31 +1,31 @@
+package Actividad2;
 
-package actividad;
-
-/**
- *
- * @author adalc
- */
 public class Cuadrado {
-  public double lado;
-  public double area;
-  public double diagonal;
-  public double perimetro;
-  
-  public Cuadrado(double lado){
-      this.lado=lado;
-  }
-  public Cuadrado(){
-      this(177852);
-  }
-  
-  void calcularArea(){
-      perimetro=lado*lado;
-  }
-  void calcularPerimetro(){
-      area=lado*lado;
-  }
-  void calcularDiagonal(){
-      diagonal= Math.sqrt(Math.pow(lado,2)*2);
-  }
     
+	public double lado;
+
+    
+    public Cuadrado() {
+            this(0);
     }
+        Cuadrado(double id) {
+            this.lado=id;
+        }
+
+    
+    public double CalcularPerimetro(){
+        double perimetro = lado*4;
+        return perimetro;
+    }
+    public double CalcularArea(){
+        double area = lado*lado;
+        return area;
+    }
+    public double CalcularDiagonal(){
+        double diagonal = Math.sqrt(Math.pow(lado,2)*2);
+        return diagonal;
+    }
+
+}
+
+

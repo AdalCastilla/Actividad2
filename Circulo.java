@@ -1,28 +1,25 @@
+package Actividad2;
 
-package actividad;
-
-/**
- *
- * @author adalc
- */
 public class Circulo {
     public double radio;
-    public double area;
-    public double circunferencia;
     
-    public Circulo(double radio){
-        this.radio= radio;
-        
-    }
-    public Circulo(){
-        this(177852);
-    }
     
-    void calcularArea(){
-        area = 3.14 * Math.pow(radio, 2);
-    }
-    
-    void calcularCircunferencia(){
-        circunferencia= 3.14*2*radio;
-    }
+    public Circulo() {
+        this(0);
 }
+    Circulo(double id) {
+        this.radio=id;
+    }
+
+    
+    public double CalcularArea(){
+        double area = 3.14 * Math.pow(radio, 2);
+        return area;
+    }
+    public double CalcularCircunferencia(){
+        double circunferencia = 3.14*2*radio;
+        return circunferencia;
+    }
+    
+}
+
