@@ -1,4 +1,4 @@
-package Actividad2;
+package actividad3;
 
 public class Cuadrado {
     
@@ -27,5 +27,4 @@ public class Cuadrado {
     }
 
 }
-
 

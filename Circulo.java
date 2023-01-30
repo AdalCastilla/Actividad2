@@ -1,7 +1,7 @@
-package Actividad2;
+package actividad3;
 
 public class Circulo {
-    public double radio;
+public double radio;
     
     
     public Circulo() {

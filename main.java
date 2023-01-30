@@ -1,14 +1,19 @@
-package Actividad2;
+package actividad3;
+
 import java.util.Scanner;
 
 public class main {
-
+ 
 	public static void main(String[] args) {
 	    Scanner scan = new Scanner(System.in);
-	    System.out.println("Ingrese que figura quiere realizar operaciones Escriba Circulo o Cuadrado");
-	    String figura = scan.next();
-
-	    if(figura.equals("circulo")||figura.equals("Circulo")){
+	    boolean bandera = false;
+	    while(bandera=true) {
+		    System.out.println("Ingrese que figura quiere realizar operaciones Escriba Circulo o Cuadrado");
+		    String figura = scan.next();
+	      
+        
+	    
+        if(figura.equals("circulo")||figura.equals("Circulo")){
 	   System.out.println("Ingrese medida del radio");
 	   int id = scan.nextInt();
 	   Circulo circulo= new Circulo(id);
@@ -59,6 +64,7 @@ public class main {
 	      }
 	    else {
 	      System.out.println("Invalido");
+	    }
 	    }
 	    scan.close();
 	    }
